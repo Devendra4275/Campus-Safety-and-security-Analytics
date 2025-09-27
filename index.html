@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Safety Dashboard</title>
+    <link rel="stylesheet" href="css\mystyle.css" />
+    <script src="js\script.js" lang="javascript" ></script>
+</head>
+<body>
+    <h1>Campus Safety & Security Dashboard</h1>
+
+    <section class="form-section">
+        <h2>Report an Incident</h2>
+        <form id="incidentForm">
+            <label>Type:</label>
+            <input name="type" required><br>
+
+            <label>Location:</label>
+            <input name="location" required><br>
+
+            <label>Time:</label>
+            <input name="time" type="datetime-local" required><br>
+
+            <label>Description:</label><br>
+            <textarea name="description" rows="4" cols="50" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="incident-list-section">
+        <h2>Reported Incidents</h2>
+        <div id="incidentList">
+            <p>Loading incidents...</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
